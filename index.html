@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сократика</title>
+    <link rel="stylesheet" href="./css/browser.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/browser.js"></script>
+  </head>
+  <body>
+    <div class="browser">
+      <section class="browser__tabs-panel">
+        <ul class="browser__tabs" id="tabs">
+          <li class="browser__tab browser__tab_active" role="button">
+            <span class="browser__tab-name">Сократика</span>
+            <span class="browser__mini-close-btn"></span>
+          </li>
+        </ul>
+        <button
+          class="browser__close-btn"
+          type="button"
+          id="close-btn"
+        ></button>
+      </section>
+      <section class="browser__url-panel">
+        <input
+          type="text"
+          class="browser__url"
+          placeholder="Укажите URL"
+          value="сократика.рф"
+        />
+      </section>
+    </div>
+
+    <div class="content-box" id="box">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo logo">
+            <span class="logo__text">Сократика</span>
+          </div>
+          <div class="header__content">
+            <div class="header__left-section">
+              <div class="header__caption">Добро пожаловать</div>
+              <h1 class="header__title title">
+                Создавай презентации<br />по школьной программе<br />вместе с
+                <span class="title_color">Сократика</span>
+              </h1>
+              <p class="header__desc">
+                Используя искусственный интеллект, ты за считанные секунды
+                получишь идеальную презентацию, которая подойдет для проведения
+                уроков в школе на любую тему
+              </p>
+              <a href="#" class="header__start-button" id="start-btn">Начать</a>
+            </div>
+            <div class="header__right-section"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <template id="tmpl">
+      <section class="start-content"></section>
+    </template>
+  </body>
+</html>
