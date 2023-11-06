@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сократика</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/browser.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/browser.js"></script>
@@ -11,8 +12,8 @@
   <body>
     <div class="browser">
       <section class="browser__tabs-panel">
-        <ul class="browser__tabs" id="tabs">
-          <li class="browser__tab browser__tab_active" role="button">
+        <ul class="browser__tabs" id="tabs" role="tablist">
+          <li class="browser__tab browser__tab_active" role="tab">
             <span class="browser__tab-name">Сократика</span>
             <span class="browser__mini-close-btn"></span>
           </li>
@@ -20,20 +21,18 @@
         <button
           class="browser__close-btn"
           type="button"
-          id="close-btn"
-        ></button>
+          id="close-btn"></button>
       </section>
       <section class="browser__url-panel">
         <input
           type="text"
           class="browser__url"
           placeholder="Укажите URL"
-          value="сократика.рф"
-        />
+          value="сократика.рф" />
       </section>
     </div>
 
-    <div class="content-box" id="box">
+    <div class="content-box" id="box" role="tabpanel">
       <header class="header">
         <div class="container">
           <div class="header__logo logo">

@@ -79,7 +79,7 @@ window.addEventListener("load", function () {
       <span class="browser__mini-close-btn"></span>
     `;
     newTab.classList.add("browser__tab", "browser__tab_active");
-    newTab.setAttribute("role", "button");
+    newTab.setAttribute("role", "tab");
     removeActiveClass(tabs);
     tabs.append(newTab);
 
